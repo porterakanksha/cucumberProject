@@ -1,0 +1,250 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-05-20T07:22:54.755Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1225170200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "To sub two numbers and validate the results are coming fine",
+        "description": "",
+        "id": "this-feature-will-allow-you-do-to-all-the-calculator-operations;to-sub-two-numbers-and-validate-the-results-are-coming-fine",
+        "after": [
+          {
+            "result": {
+              "duration": 81018100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.Hooks.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1999600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I have two numbers 11 and 6",
+            "match": {
+              "arguments": [
+                {
+                  "val": "11",
+                  "offset": 19
+                },
+                {
+                  "val": "6",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefs.calculator.i_have_two_numbers_and(int,int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I sub those two numbers",
+            "match": {
+              "location": "stepdefs.calculator.i_sub_those_two_numbers()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I should get the result as 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdefs.calculator.i_should_get_the_result_as(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "This feature will allow you do to all the calculator operations",
+    "description": "",
+    "id": "this-feature-will-allow-you-do-to-all-the-calculator-operations",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Calculator.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 627529100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have launched the application",
+            "match": {
+              "location": "stepdefs.LoginStepDefs.i_have_launched_the_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7686808300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have clicked on Login Link",
+            "match": {
+              "location": "stepdefs.LoginStepDefs.i_have_clicked_on_Login_Link()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-20T07:22:56.110Z",
+        "before": [
+          {
+            "result": {
+              "duration": 714324100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Validate the Login failure scenario using parameters",
+        "description": "",
+        "id": "this-feature-will-be-used-to-test-the-login-functionality-of-simplilearn-application;validate-the-login-failure-scenario-using-parameters",
+        "after": [
+          {
+            "result": {
+              "duration": 117866000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.Hooks.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 74056200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I enter username as \"abc@xyz.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"abc@xyz.com\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.LoginStepDefs.i_enter_username_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 54011700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I enter password as \"Abc@1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Abc@1234\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.LoginStepDefs.i_enter_password_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3011158600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I click on Login button",
+            "match": {
+              "location": "stepdefs.LoginStepDefs.i_click_on_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 34008200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I should get the error message as \"The email or password you have entered is invalid.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"The email or password you have entered is invalid.\"",
+                  "offset": 34
+                }
+              ],
+              "location": "stepdefs.LoginStepDefs.i_should_get_the_error_message_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "This feature will be used to test the login functionality of Simplilearn application",
+    "description": "",
+    "id": "this-feature-will-be-used-to-test-the-login-functionality-of-simplilearn-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/login.feature",
+    "tags": []
+  }
+]

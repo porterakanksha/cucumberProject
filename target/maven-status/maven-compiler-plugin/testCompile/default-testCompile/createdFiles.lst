@@ -1,0 +1,5 @@
+stepdefs\TestRunner.class
+stepdefs\Hooks.class
+stepdefs\LoginStepDefs.class
+stepdefs\calculator.class
+stepdefs\NewCalaculator.class
